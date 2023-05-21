@@ -16,3 +16,7 @@ except ValueError:
     print("错误：请输入整数作为计算参数")
     sys.exit(1)
 print(var1 + var2)
+
+print("1234" > "456")
+
+print(len("456") > len("1234"))
