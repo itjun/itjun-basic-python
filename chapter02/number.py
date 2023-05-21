@@ -20,3 +20,6 @@ print(var1 + var2)
 print("1234" > "456")
 
 print(len("456") > len("1234"))
+
+#  变量 pi 用于计算圆的面积
+pi = 3.14
