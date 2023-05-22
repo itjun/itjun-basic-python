@@ -41,20 +41,20 @@ print(var2)
 
 # 切片操作
 print("切片操作演示")
-str = "abcde"
-print(str[0])
-print(str[-1])
-print(str[1:3])
+string = "abcde"
+print(string[0])
+print(string[-1])
+print(string[1:3])
 
 # str.count(sub[, strart[,end]]) 返回字符串 sub 在 [start, end] 范围内出现的次数
 # str.isalnum() 如果字符串中所有的字符都是字母或数字，且至少有一个字符，那么返回 True，否则返回 False，例如可用于判断用户的 e-mail
 # str.isalpha() 如果字符串中所有的字符都是字母，且至少有一个字符，那么返回 True，否则返回 False
 
-print((str * 3).count("a"))
-print((str * 3).count("abc"))
-print((str).isalnum())
-print((str).isalpha())
+print((string * 3).count("a"))
+print((string * 3).count("abc"))
+print(string.isalnum())
+print(string.isalpha())
 
-print(",".join(str))
+print(",".join(string))
 print("a,b,c,d,".split(","))
 print("xyz".startswith("x"))
