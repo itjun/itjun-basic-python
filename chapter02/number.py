@@ -24,3 +24,8 @@ print(len("456") > len("1234"))
 
 #  变量 pi 用于计算圆的面积
 pi = 3.14
+
+def compute(num1,op, num2):
+    return eval(f"{num1}{op}{num2}")
+
+print(compute(3, "+", 5))
