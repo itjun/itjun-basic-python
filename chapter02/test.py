@@ -1,0 +1,6 @@
+print("ABC" > "ABD")
+# print("ABC" > 123)
+print(123.0 > 123)
+print(123.0 == 123)
+print("123.0" > "123")
+print("123.0" == "123")
