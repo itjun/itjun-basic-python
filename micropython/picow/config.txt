@@ -1,0 +1,7 @@
+version=1
+wifi_ssid=MIMRC-RDC6
+wifi_password=Mi12345678
+token=1806118688ac4c2ba9456ab21c93013c
+machine=pico-test
+precision=°C
+frequency=10
