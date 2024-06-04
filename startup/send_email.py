@@ -33,7 +33,6 @@ def send_email(subject, body):
 now = datetime.now()
 # 格式化日期和时间
 current_date_and_time = now.strftime("%Y-%m-%d %H:%M:%S")
-send_email('itjun-alpha 启动', f'{current_date_and_time} Your computer has just started.')
 
 if __name__ == "__main__":
     import sys
