@@ -1,4 +1,5 @@
 import requests
+
 # from urllib.parse import urlencode
 
 url = 'https://qc.4plc.cn/public/log1?token=1806118688ac4c2ba9456ab21c93013c'
@@ -15,7 +16,7 @@ data = {
     'level': 'value2',
     'type': 'value2',
     'machine': 'pico_w_local_mac_ip',
-    'createTime': '1716896462112',# 2024-05-24 18:05:35
+    'createTime': '1716896462112',  # 2024-05-24 18:05:35
     'data0': '21',
     'data1': '22',
 }

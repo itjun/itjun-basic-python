@@ -1,5 +1,6 @@
 import os
 
+
 # 读取板载上的配置文件
 
 def read_properties(lines, key, defValue):
@@ -7,9 +8,10 @@ def read_properties(lines, key, defValue):
         arr = line.split("=")
         key1 = arr[0]
         value = arr[1]
-        if key1==key:
+        if key1 == key:
             return value.strip()
     return defValue
+
 
 f = open('config.txt', 'r')
 if f == None:
@@ -17,4 +19,3 @@ if f == None:
 lines = f.readlines()
 
 print(read_properties(lines, 'd', '222'))
-

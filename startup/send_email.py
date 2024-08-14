@@ -3,6 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
+
 def send_email(subject, body):
     # 电子邮件服务器配置
     smtp_server = 'smtp.qq.com'
@@ -29,6 +30,7 @@ def send_email(subject, body):
     except Exception as e:
         print(f'Failed to send email: {e}')
 
+
 # 获取当前日期和时间
 now = datetime.now()
 # 格式化日期和时间
@@ -36,6 +38,7 @@ current_date_and_time = now.strftime("%Y-%m-%d %H:%M:%S")
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) > 1 and sys.argv[1] == 'startup':
         send_email('itjun-alpha 启动', f'{current_date_and_time} Your computer has just started.')
     elif len(sys.argv) > 1 and sys.argv[1] == 'shutdown':

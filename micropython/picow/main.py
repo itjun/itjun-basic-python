@@ -21,6 +21,8 @@ wlan.connect(SSID, PASSWORD)
 # 读取CPU温度
 sensor_temp = machine.ADC(4)
 conversion_factor = 3.3 / (65535)
+
+
 def read_temp():
     # 读取原始ADC值
     reading = sensor_temp.read_u16()
@@ -29,6 +31,7 @@ def read_temp():
     # 根据树莓派 Pico 的数据手册，转换电压为温度
     temperature = 27 - (voltage - 0.706) / 0.001721
     return temperature
+
 
 temp = read_temp()
 print('当前CPU温度:', temp, '°C')
@@ -78,4 +81,3 @@ except KeyboardInterrupt:
     # 捕捉键盘中断信号，确保在终端中按Ctrl+C时能优雅地退出
     led.value(0)  # 程序结束时关闭LED
     print("程序被中断，LED已关闭")
-
